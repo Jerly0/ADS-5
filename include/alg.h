@@ -4,20 +4,20 @@
 
 #include <string>
 #include <iostream>
-const int size=100;
+const int size = 100;
 
 std::string infx2pstfx(std::string);
 int eval(std::string);
 
 template<class T>
 class TStack {
-   private:
-     T arr[size];
-     int top;
-   public:
-     TStack():top(-1) { }
-     T get() const { 
-        return arr[top];
+    private:
+      T arr[size];
+      int top;
+    public:
+      TStack():top(-1) { }
+      T get() const { 
+         return arr[top];
      }
      bool isEmpty() const {
         return top == -1;
