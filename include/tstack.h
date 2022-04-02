@@ -14,7 +14,7 @@ class TStack {
       if (!isEmpty())
         return arr[top];
       else
-      throw "!empty";
+        throw "Empty";
     }
     bool isEmpty() {
         return top == -1;
