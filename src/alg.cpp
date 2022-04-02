@@ -4,7 +4,7 @@
 #include "tstack.h"
 
 int prior(char c) {
-  if (c == '(') {
+  if(c == '('){
     return 0;
   }
   else if (c == ')') {
