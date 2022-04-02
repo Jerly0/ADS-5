@@ -2,12 +2,14 @@
 #include <string>
 #include <map>
 #include "tstack.h"
+#include <iostream>
+const int size=100;
 
 template<class T>
 class TStack {
-  private:
-    T arr[size];
-    int top;
+   private:
+     T arr[size];
+     int top;
   public:
     TStack():top(-1) { }
     T get() const { 
