@@ -6,12 +6,12 @@
 template<typename T, int size>
 class TStack {
  private:
-    T arr[size];
+    T arr1[size];
     int top;
  public:
     TStack():top(-1) { }
     T get() const {
-      return arr[top];
+      return arr1[top];
     }
     bool isEmpty() const {
       return top == -1;
@@ -25,7 +25,7 @@ class TStack {
     }
     void push(T item) {
       if (top < size - 1)
-        arr[++top] = item;
+        arr1[++top] = item;
     }
 };
 #endif  // INCLUDE_TSTACK_H_
