@@ -5,19 +5,19 @@
 
 int prior(char c) {
  if (c == '(') {
-   return 0;
+  return 0;
  }
  else if (c == ')') {
-   return 1;
+  return 1;
  }
- else if ((c ==  '+') || (c == '-')) {
-   return 2;
+ else if ((c == '+') || (c == '-')) {
+  return 2;
  }
  else if ((c == '*') || (c == '/')) {
-   return 3;
+  return 3;
  }
  else {
-   return -1;
+  return -1;
  }
 }
 
