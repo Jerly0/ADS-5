@@ -10,10 +10,10 @@ int prior(char c) {
   else if (c == ')') {
     return 1;
   }
-  else if (c ==  '+' || c == '-') {
+  else if ((c ==  '+') || (c == '-')) {
     return 2;
   }
-  else if (c == '*' || c == '/') {
+  else if ((c == '*') || (c == '/')) {
     return 3;
   }
   else {
@@ -22,7 +22,6 @@ int prior(char c) {
 }
 
 std::string infx2pstfx(std::string inf) {
-  // добавьте код
   TStack <char, 100> mystack;
   std::string str;
   for (int i = 0; i < inf.size(); i++) {
@@ -61,7 +60,6 @@ std::string infx2pstfx(std::string inf) {
 }
 
 int eval(std::string pref) {
-  // добавьте код
   TStack <int, 100> mystack1;
   std::string temp;
   int n = 0, m = 0;
